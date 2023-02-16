@@ -34,6 +34,19 @@
       </a>
     </p>
 
+    <h3>打开内嵌Iframe的页签操作</h3>
+
+    <p>
+      <router-link
+        class="demo-btn"
+        :to="
+          `/default/part-iframe/PagePartIframe/测试一个包含iframe的页面(状态保持)/rt-icon-web`
+        "
+      >
+        打开“页面”(使用router-link, 可以状态保持)
+      </router-link>
+    </p>
+
     <h3>打开 Iframe 页签</h3>
 
     <div class="custom-iframe">

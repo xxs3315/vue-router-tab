@@ -63,6 +63,21 @@
           @load="iframeLoaded(url)"
         />
       </transition-group>
+
+      <!-- part iframe 页面 -->
+      <transition-group
+        v-bind="pageTrans"
+        tag="div"
+        class="router-tab__part-iframes"
+      >
+        <component
+          :is="item"
+          v-for="item in partIframes"
+          v-show="item === currentPartIframe"
+          :key="item"
+          class="router-tab__part-iframe"
+        ></component>
+      </transition-group>
     </div>
 
     <!-- 右键菜单 -->
